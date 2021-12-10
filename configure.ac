@@ -2190,6 +2190,7 @@ AC_CONFIG_FILES([Makefile
 		src/mod/formats/mod_tone_stream/Makefile
 		src/mod/formats/mod_vlc/Makefile
 		src/mod/formats/mod_portaudio_stream/Makefile
+        src/mod/formats/mod_udesk_play/Makefile
 		src/mod/languages/mod_java/Makefile
 		src/mod/languages/mod_lua/Makefile
 		src/mod/languages/mod_managed/Makefile

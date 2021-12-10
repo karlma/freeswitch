@@ -2736,7 +2736,8 @@ typedef enum {
 	ICE_GOOGLE_JINGLE = (1 << 0),
 	ICE_VANILLA = (1 << 1),
 	ICE_CONTROLLED = (1 << 2),
-	ICE_LITE = (1 << 3)
+	ICE_LITE = (1 << 3),
+	ICE_IMMEDIATELY = (1 << 4)
 } switch_core_media_ice_type_t;
 
 typedef enum {

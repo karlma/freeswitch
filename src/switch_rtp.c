@@ -1279,7 +1279,7 @@ static void handle_ice(switch_rtp_t *rtp_session, switch_rtp_ice_t *ice, void *d
 					do_adj++;
 					rtp_session->ice_adj++;
 					rtp_session->wrong_addrs = 0;
-				} else if (rtp_session->wrong_addrs > 10 || elapsed >= 5000) {
+				} else if ((ice->type & ICE_IMMEDIATELY) || rtp_session->wrong_addrs > 10 || elapsed >= 5000) {
 					do_adj++;
 				}
 

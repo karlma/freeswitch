@@ -4103,6 +4103,10 @@ static switch_call_direction_t switch_ice_direction(switch_rtp_engine_t *engine,
 static switch_core_media_ice_type_t switch_determine_ice_type(switch_rtp_engine_t *engine, switch_core_session_t *session) {
 	switch_core_media_ice_type_t ice_type = ICE_VANILLA;
 
+	//if (switch_channel_var_true(session->channel, "ice_immediately")){
+		ice_type |= ICE_IMMEDIATELY;
+	//}
+
 	if (switch_channel_var_true(session->channel, "ice_lite")) {
 		ice_type |= ICE_CONTROLLED;
 		ice_type |= ICE_LITE;
