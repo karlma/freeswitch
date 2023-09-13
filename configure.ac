@@ -2112,6 +2112,7 @@ AC_CONFIG_FILES([Makefile
 		src/mod/applications/mod_vmd/Makefile
 		src/mod/applications/mod_voicemail/Makefile
 		src/mod/applications/mod_voicemail_ivr/Makefile
+		src/mod/applications/mod_kylin_grub/Makefile
 		src/mod/asr_tts/mod_cepstral/Makefile
 		src/mod/asr_tts/mod_flite/Makefile
 		src/mod/asr_tts/mod_pocketsphinx/Makefile
@@ -2190,7 +2191,7 @@ AC_CONFIG_FILES([Makefile
 		src/mod/formats/mod_tone_stream/Makefile
 		src/mod/formats/mod_vlc/Makefile
 		src/mod/formats/mod_portaudio_stream/Makefile
-        src/mod/formats/mod_udesk_play/Makefile
+    src/mod/formats/mod_udesk_play/Makefile
 		src/mod/languages/mod_java/Makefile
 		src/mod/languages/mod_lua/Makefile
 		src/mod/languages/mod_managed/Makefile
