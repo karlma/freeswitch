@@ -1544,6 +1544,7 @@ SWITCH_DECLARE(switch_status_t) switch_ivr_hold(switch_core_session_t *session, 
 	msg.string_arg = message;
 	msg.from = __FILE__;
 
+	switch_channel_set_flag(channel, CF_RTP_DISABLE_PASS_RMODE);
 	switch_channel_set_flag(channel, CF_HOLD);
 	switch_channel_set_flag(channel, CF_SUSPEND);
 
@@ -1621,6 +1622,7 @@ SWITCH_DECLARE(switch_status_t) switch_ivr_unhold(switch_core_session_t *session
 	msg.message_id = SWITCH_MESSAGE_INDICATE_UNHOLD;
 	msg.from = __FILE__;
 
+	switch_channel_clear_flag(channel, CF_RTP_DISABLE_PASS_RMODE);
 	switch_channel_clear_flag(channel, CF_HOLD);
 	switch_channel_clear_flag(channel, CF_SUSPEND);
 
